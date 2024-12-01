@@ -1,6 +1,6 @@
 import kotlin.math.absoluteValue
 
-fun main() {
+fun main(args: Array<String>) {
     println(part1())
     println(part2())
 }
