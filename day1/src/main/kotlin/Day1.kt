@@ -1,10 +1,8 @@
 import kotlin.math.absoluteValue
 
 fun main() {
-    val start = System.currentTimeMillis()
     println(part1())
     println(part2())
-    println("Finished in ${System.currentTimeMillis() - start}ms")
 }
 
 fun part1(): Any {
