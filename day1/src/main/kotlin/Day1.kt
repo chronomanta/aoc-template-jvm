@@ -18,12 +18,12 @@ fun part1(): Any {
 }
 
 fun part2(): Any {
-    val array1: IntArray = input.map { it.split("   ")[0].toInt() }.toIntArray()
-    val map: Map<Int, Int> = input.map { it.split("   ")[1].toInt() }.groupingBy { it }.eachCount()
+    val leftMap: Map<Int, Int> = input.map { it.split("   ")[0].toInt() }.groupingBy { it }.eachCount()
+    val rightMap: Map<Int, Int> = input.map { it.split("   ")[1].toInt() }.groupingBy { it }.eachCount()
     var acc = 0
-    for (i in array1.indices) {
-        if (map.containsKey(array1[i])) {
-            acc += array1[i] * map[array1[i]]!!
+    for (key in leftMap.keys) {
+        if (rightMap.containsKey(key)) {
+            acc += key * leftMap[key]!! * rightMap[key]!!
         }
     }
     return acc
