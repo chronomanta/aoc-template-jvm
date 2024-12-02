@@ -1,1 +1,1 @@
---enable-preview -XX:+AlwaysPreTouch -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xms16m -Xmx16m
+--enable-preview -XX:+AlwaysPreTouch -XX:+UnlockExperimentalVMOptions -XX:+UseEpsilonGC -Xms8m -Xmx8m
