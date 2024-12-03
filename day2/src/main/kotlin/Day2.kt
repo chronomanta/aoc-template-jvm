@@ -26,10 +26,8 @@ fun List<Int>.isSafeWithDampener(): Boolean {
 }
 
 fun main(args: Array<String>) {
-    val start = System.currentTimeMillis()
     println(part1())
     println(part2())
-    println("Finished in: ${System.currentTimeMillis() - start}ms")
 }
 
 fun part1(): Any {
